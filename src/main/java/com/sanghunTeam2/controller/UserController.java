@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/users")
+@RequestMapping("/api/v1")
 public class UserController {
 
-    @GetMapping
+    @GetMapping("/hello")
     public ResponseEntity<String> hello() {
-        return ResponseEntity.ok().body("Hi");
+        return ResponseEntity.ok().body("hello");
     }
 }
